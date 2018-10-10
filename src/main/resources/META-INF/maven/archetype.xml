@@ -1,0 +1,15 @@
+<archetype>
+    <id>quick-java-archetype</id>
+    <sources>
+        <source>src/main/java/App.java</source>
+    </sources>
+    <resources>
+        <resource>.gitignore</resource>
+        <resource>.editorconfig</resource>
+        <resource>src/main/resources/log4j2.xml</resource>
+    </resources>
+    <testResources></testResources>
+    <testSources>
+        <source>src/test/java/AppTest.java</source>
+    </testSources>
+</archetype>
