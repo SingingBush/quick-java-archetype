@@ -7,7 +7,7 @@
     <version>${version}</version>
     <packaging>jar</packaging>
 
-    <name>$quick-java-archetype</name>
+    <name>${artifactId}</name>
     <description></description>
     <inceptionYear></inceptionYear>
 
@@ -32,9 +32,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>5.2.0</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.3.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

@@ -1,4 +1,7 @@
-package $com.singingbush;
+package ${groupId};
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author Samael Bate (singingbush)
