@@ -6,6 +6,7 @@
     <resources>
         <resource>.gitignore</resource>
         <resource>.editorconfig</resource>
+        <resource>README.md</resource>
         <resource>src/main/resources/log4j2.xml</resource>
     </resources>
     <testResources></testResources>
