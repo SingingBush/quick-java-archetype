@@ -7,7 +7,7 @@
 
     <name>Quick Java Archetype</name>
     <description>Creates a new project with slf4j &amp; log4j2</description>
-    <url>http://maven.apache.org</url>
+    <url>https://github.com/SingingBush/quick-java-archetype/</url>
     <inceptionYear>2018</inceptionYear>
 
     <licenses>
@@ -29,5 +29,67 @@
             </roles>
         </developer>
     </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/SingingBush/quick-java-archetype.git</connection>
+        <developerConnection>scm:git:ssh://github.com:SingingBush/quick-java-archetype.git</developerConnection>
+        <url>https://github.com/SingingBush/quick-java-archetype/tree/master</url>
+    </scm>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/SingingBush/quick-java-archetype/issues</url>
+    </issueManagement>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <activation>
+                <property>
+                    <name>performRelease</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.6</version>
+                        <configuration>
+                            <keyname>6E394A59C56281A1C7BCB31CBB1163024293DF16</keyname>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>
