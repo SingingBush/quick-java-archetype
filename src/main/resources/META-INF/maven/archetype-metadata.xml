@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="basic" partial="false">
+    <requiredProperties>
+        <requiredProperty key="javaVersion">
+            <defaultValue>1.8</defaultValue>
+            <validationRegex>^(1\.8|9|10|11)$</validationRegex>
+        </requiredProperty>
+    </requiredProperties>
+</archetype-descriptor>
