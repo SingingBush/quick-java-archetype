@@ -1,6 +1,8 @@
 Quick Java Archetype
 ====================
 
+[![Maven Central](https://img.shields.io/maven-central/v/com.singingbush/quick-java-archetype.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.singingbush%22%20AND%20a:%22quick-java-archetype%22)
+
 Get up and running quickly
 
 ```text
