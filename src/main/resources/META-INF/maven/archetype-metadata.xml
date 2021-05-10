@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archetype-descriptor name="basic" partial="false">
+<archetype-descriptor xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+                      name="quick-java-archetype" partial="false">
     <requiredProperties>
         <requiredProperty key="javaVersion">
             <defaultValue>11</defaultValue>
             <validationRegex>^(1\.8|11|15|16)$</validationRegex>
         </requiredProperty>
     </requiredProperties>
+
+    <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+            <directory>src/main/java</directory>
+        </fileSet>
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory>src/main/resources</directory>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+            <directory>src/test/java</directory>
+        </fileSet>
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory>src/test/resources</directory>
+        </fileSet>
+    </fileSets>
+
 </archetype-descriptor>
