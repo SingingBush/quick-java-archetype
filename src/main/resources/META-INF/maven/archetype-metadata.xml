@@ -2,8 +2,8 @@
 <archetype-descriptor name="basic" partial="false">
     <requiredProperties>
         <requiredProperty key="javaVersion">
-            <defaultValue>1.8</defaultValue>
-            <validationRegex>^(1\.8|9|10|11)$</validationRegex>
+            <defaultValue>11</defaultValue>
+            <validationRegex>^(1\.8|11|15|16)$</validationRegex>
         </requiredProperty>
     </requiredProperties>
 </archetype-descriptor>

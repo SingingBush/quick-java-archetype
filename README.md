@@ -15,4 +15,4 @@ mvn archetype:generate \
     -DjavaVersion=11
 ```
 
-The `javaVersion` option can be 1.8 (the default), 9, 10, or 11
+The `javaVersion` option can be 1.8, 11, 15, or 16. The default is Java 11.
