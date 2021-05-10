@@ -9,7 +9,7 @@ Get up and running quickly
 mvn archetype:generate \
     -DarchetypeGroupId=com.singingbush \
     -DarchetypeArtifactId=quick-java-archetype \
-    -DarchetypeVersion=0.2.0-SNAPSHOT \
+    -DarchetypeVersion=0.1.1 \
     -DgroupId=<my.groupid> \
     -DartifactId=<my-artifactId> \
     -DjavaVersion=11
