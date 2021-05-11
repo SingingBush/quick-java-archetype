@@ -11,6 +11,14 @@
     </requiredProperties>
 
     <fileSets>
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory/>
+            <includes>
+                <include>README.md</include>
+                <include>.gitignore</include>
+                <include>.editorconfig</include>
+            </includes>
+        </fileSet>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
             <directory>src/main/java</directory>
         </fileSet>
@@ -20,9 +28,9 @@
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
             <directory>src/test/java</directory>
         </fileSet>
-        <fileSet filtered="true" packaged="false" encoding="UTF-8">
-            <directory>src/test/resources</directory>
-        </fileSet>
+<!--        <fileSet filtered="true" packaged="false" encoding="UTF-8">-->
+<!--            <directory>src/test/resources</directory>-->
+<!--        </fileSet>-->
     </fileSets>
 
 </archetype-descriptor>
