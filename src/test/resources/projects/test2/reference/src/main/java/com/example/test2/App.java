@@ -1,4 +1,4 @@
-package ${package};
+package com.example.test2;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
