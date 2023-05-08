@@ -4,7 +4,7 @@
     <groupId>com.singingbush</groupId>
     <artifactId>quick-java-archetype</artifactId>
     <packaging>maven-archetype</packaging>
-    <version>0.1.3-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>Quick Java Archetype</name>
     <description>Creates a new project with slf4j &amp; log4j2</description>
