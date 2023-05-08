@@ -6,7 +6,7 @@
     <requiredProperties>
         <requiredProperty key="javaVersion">
             <defaultValue>17</defaultValue>
-            <validationRegex>^(1\.8|11|17|18)$</validationRegex>
+            <validationRegex>^(1\.8|11|17|18|19|20|21)$</validationRegex>
         </requiredProperty>
     </requiredProperties>
 

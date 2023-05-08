@@ -76,7 +76,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.2.1</version>
+                <version>3.3.0</version>
                 <executions>
                     <execution>
                         <id>enforce-java</id>
@@ -106,6 +106,7 @@
                     <debug>true</debug>
                     <ignoreEOLStyle>true</ignoreEOLStyle>
 <!--                    <skip>true</skip>-->
+                    <useDefaultExcludes>false</useDefaultExcludes>
                 </configuration>
             </plugin>
         </plugins>
@@ -125,7 +126,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.0.1</version>
+                        <version>3.1.0</version>
                         <configuration>
                             <keyname>6E394A59C56281A1C7BCB31CBB1163024293DF16</keyname>
                         </configuration>
