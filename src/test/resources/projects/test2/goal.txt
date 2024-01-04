@@ -1,1 +1,1 @@
-verify
+verify -Ddependency-check.skip=true

@@ -8,6 +8,10 @@
             <defaultValue>11</defaultValue>
             <validationRegex>^(1\.8|11|17|21)$</validationRegex>
         </requiredProperty>
+        <requiredProperty key="configureGitHubAction">
+            <defaultValue>Y</defaultValue>
+            <validationRegex>^(Y|N|y|n)$</validationRegex>
+        </requiredProperty>
     </requiredProperties>
 
     <fileSets>
@@ -15,12 +19,26 @@
             <directory/>
             <includes>
                 <include>README.md</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="false" packaged="false" encoding="UTF-8">
+            <directory/>
+            <includes>
                 <include>.gitignore</include>
                 <include>.editorconfig</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
             <directory>src/main/java</directory>
+            <includes>
+                <include>App.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>module-info.java</include>
+            </includes>
         </fileSet>
         <fileSet filtered="true" packaged="false" encoding="UTF-8">
             <directory>src/main/resources</directory>

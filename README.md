@@ -10,13 +10,13 @@ Quick Java Archetype
 mvn archetype:generate \
     -DarchetypeGroupId=com.singingbush \
     -DarchetypeArtifactId=quick-java-archetype \
-    -DarchetypeVersion=1.0.0 \
+    -DarchetypeVersion=1.1.0 \
     -DgroupId=<my.groupid> \
     -DartifactId=<my-artifactId> \
     -DjavaVersion=11
 ```
 
-The `javaVersion` option can be 1.8, 11, 17, or 21. The default is Java 11.
+The `javaVersion` option can be 1.8, 11, 17, or 21. The default is Java 11. If the JDK version supports JPMS then a *module-info.java* will be created in the generated project.
 
 ## Building from source and using latest snapshot (local install)
 Get up and running quickly
@@ -29,7 +29,7 @@ mvn install
 mvn archetype:generate \
     -DarchetypeGroupId=com.singingbush \
     -DarchetypeArtifactId=quick-java-archetype \
-    -DarchetypeVersion=1.0.0 \
+    -DarchetypeVersion=1.1.0 \
     -DgroupId=<my.groupid> \
     -DartifactId=<my-artifactId> \
     -DjavaVersion=11

@@ -4,7 +4,7 @@
     <groupId>com.singingbush</groupId>
     <artifactId>quick-java-archetype</artifactId>
     <packaging>maven-archetype</packaging>
-    <version>1.1.0</version>
+    <version>1.2.0-SNAPSHOT</version>
 
     <name>Quick Java Archetype</name>
     <description>Creates a new project with slf4j &amp; log4j2</description>
@@ -59,7 +59,6 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-<!--        <maven.archetype.version>3.1.2</maven.archetype.version>-->
         <maven.archetype.version>3.2.1</maven.archetype.version>
     </properties>
 
@@ -103,7 +102,7 @@
                 <artifactId>maven-archetype-plugin</artifactId>
                 <version>${maven.archetype.version}</version>
                 <configuration>
-                    <debug>true</debug>
+                    <debug>false</debug>
                     <ignoreEOLStyle>true</ignoreEOLStyle>
 <!--                    <skip>true</skip>-->
                     <useDefaultExcludes>false</useDefaultExcludes>
