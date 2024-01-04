@@ -18,6 +18,8 @@ mvn archetype:generate \
 
 The `javaVersion` option can be 1.8, 11, 17, or 21. The default is Java 11. If the JDK version supports JPMS then a *module-info.java* will be created in the generated project.
 
+The `configureGitHubAction` option (since 1.2.0) can be used to generate a `.github/` directory in the project with CI and Dependabot pre-configured.
+
 ## Building from source and using latest snapshot (local install)
 Get up and running quickly
 
