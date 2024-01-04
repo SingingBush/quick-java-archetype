@@ -5,8 +5,8 @@
                       name="quick-java-archetype" partial="false">
     <requiredProperties>
         <requiredProperty key="javaVersion">
-            <defaultValue>17</defaultValue>
-            <validationRegex>^(1\.8|11|17|18|19|20|21)$</validationRegex>
+            <defaultValue>11</defaultValue>
+            <validationRegex>^(1\.8|11|17|21)$</validationRegex>
         </requiredProperty>
     </requiredProperties>
 

@@ -16,7 +16,7 @@ mvn archetype:generate \
     -DjavaVersion=11
 ```
 
-The `javaVersion` option can be 1.8, 11, 17, 18, 19, 20, or 21. The default is Java 11.
+The `javaVersion` option can be 1.8, 11, 17, or 21. The default is Java 11.
 
 ## Building from source and using latest snapshot (local install)
 Get up and running quickly
