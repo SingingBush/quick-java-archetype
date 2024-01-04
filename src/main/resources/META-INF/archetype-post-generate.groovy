@@ -36,6 +36,7 @@ if (javaVersion.equals("1.8")) {
 
 // configureGitHubAction is either Y or N
 Boolean configureGitHubAction = configureGitHubAction.toUpperCase().startsWith("Y")
+//println "Configure GitHub Action: $configureGitHubAction"
 if (!configureGitHubAction) {
     // println "Remove .github/*"
     assert Paths.get(request.outputDirectory, request.artifactId, ".github").toFile().deleteDir()

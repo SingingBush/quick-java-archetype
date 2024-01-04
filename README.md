@@ -10,7 +10,7 @@ Quick Java Archetype
 mvn archetype:generate \
     -DarchetypeGroupId=com.singingbush \
     -DarchetypeArtifactId=quick-java-archetype \
-    -DarchetypeVersion=1.1.0 \
+    -DarchetypeVersion=1.2.0 \
     -DgroupId=<my.groupid> \
     -DartifactId=<my-artifactId> \
     -DjavaVersion=11
@@ -21,17 +21,20 @@ The `javaVersion` option can be 1.8, 11, 17, or 21. The default is Java 11. If t
 The `configureGitHubAction` option (since 1.2.0) can be used to generate a `.github/` directory in the project with CI and Dependabot pre-configured.
 
 ## Building from source and using latest snapshot (local install)
-Get up and running quickly
+When building a release Java 8 should be used for maximum compatibility. However, as JDK 11 is required for the integration tests releases (either maven install or maven deploy) should use the skip tests property:
 
 ```text
-mvn install
+JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk mvn clean install -DskipTests=true -Dmaven.test.skip=true
 ```
+
+Then when using the locally installed build make sure to use `-DarchetypeCatalog=local`:
 
 ```text
 mvn archetype:generate \
+    -DarchetypeCatalog=local
     -DarchetypeGroupId=com.singingbush \
     -DarchetypeArtifactId=quick-java-archetype \
-    -DarchetypeVersion=1.1.0 \
+    -DarchetypeVersion=1.2.1-SNAPSHOT \
     -DgroupId=<my.groupid> \
     -DartifactId=<my-artifactId> \
     -DjavaVersion=11

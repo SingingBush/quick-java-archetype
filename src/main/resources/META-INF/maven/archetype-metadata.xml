@@ -15,6 +15,9 @@
     </requiredProperties>
 
     <fileSets>
+        <fileSet filtered="false" packaged="false" encoding="UTF-8">
+            <directory>.github</directory>
+        </fileSet>
         <fileSet filtered="true" packaged="false" encoding="UTF-8">
             <directory/>
             <includes>
