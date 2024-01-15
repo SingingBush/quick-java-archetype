@@ -4,7 +4,7 @@
     <groupId>com.singingbush</groupId>
     <artifactId>quick-java-archetype</artifactId>
     <packaging>maven-archetype</packaging>
-    <version>1.2.0</version>
+    <version>1.2.1-SNAPSHOT</version>
 
     <name>Quick Java Archetype</name>
     <description>Creates a new project with slf4j &amp; log4j2</description>
@@ -75,7 +75,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.4.0</version>
+                <version>3.4.1</version>
                 <executions>
                     <execution>
                         <id>enforce-java</id>
