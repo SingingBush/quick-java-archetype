@@ -1,17 +1,23 @@
 name: Java CI
 
-on: [push, pull_request]
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches:
+      - main
 
 jobs:
   build:
     name: Test with Java ${{ matrix.jdk }}
-    #runs-on: ${{ matrix.os }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         jdk: ['11', '17', '21']
-        #os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
     - uses: actions/checkout@v4
