@@ -10,7 +10,7 @@ Quick Java Archetype
 mvn archetype:generate \
     -DarchetypeGroupId=com.singingbush \
     -DarchetypeArtifactId=quick-java-archetype \
-    -DarchetypeVersion=1.2.0 \
+    -DarchetypeVersion=1.3.0 \
     -DgroupId=<my.groupid> \
     -DartifactId=<my-artifactId> \
     -DjavaVersion=11
